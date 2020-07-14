@@ -1,0 +1,45 @@
+.inputFields {
+  width: 26rem;
+  height: 3.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  outline: none;
+  padding-left: 1rem;
+}
+#checkBox {
+  margin-left: 1rem;
+  position: relative;
+  bottom: 0.5rem;
+}
+.checkBox {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.submitButton {
+  background-color: rgb(0, 195, 255);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 10.5rem;
+  height: 3rem;
+  position: relative;
+  left: 2rem;
+  top: 3rem;
+  color: white;
+  font-size: 1.5rem;
+  margin: auto;
+}
+#cancelButton {
+  background-color: red;
+}
+
+form {
+  position: relative;
+  bottom: 2rem;
+  left: -10rem;
+}
+h1 {
+  position: relative;
+  top: 15rem;
+}

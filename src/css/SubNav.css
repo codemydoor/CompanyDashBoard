@@ -1,0 +1,15 @@
+.subNav {
+  height: 3.7rem;
+  width: 133rem;
+  background-color: silver;
+  margin-top: 3rem;
+  margin-left: 5.5rem;
+  border-radius: 0.3rem;
+}
+
+.subNav p {
+  position: relative;
+  top: 0.8rem;
+  left: 2rem;
+  font-size: 1.5rem;
+}

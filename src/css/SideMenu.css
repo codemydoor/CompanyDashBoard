@@ -1,0 +1,25 @@
+.menu {
+  position: relative;
+  top: 2.3rem;
+}
+.menu ul {
+  list-style: none;
+}
+.menu ul li {
+  background-color: white;
+  height: 4rem;
+  width: 26rem;
+  /* border-top: 1px silver solid; */
+  border: silver 1px solid;
+}
+.menu ul li a {
+  text-decoration: none;
+  padding: 5rem;
+  position: relative;
+  top: 0.7rem;
+}
+#dashtag {
+  background-color: rgb(156, 25, 25);
+  color: rgb(255, 255, 255);
+  cursor: none;
+}
