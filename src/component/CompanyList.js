@@ -9,7 +9,7 @@ class CompanyList extends Component {
     this.state = {
       company: [
         {
-          companyName: "",
+          companyName: "unilever",
           industry: "",
           location: "",
           date: "",
@@ -29,10 +29,16 @@ class CompanyList extends Component {
       <div>
         <Form addCompany={this.AddNewCompany} />
 
-        {this.state.company.map((item) => {
+        {this.state.company.map((item, index) => {
           return (
             <div>
-              <CompanyInfo />
+              <CompanyInfo
+                key={index}
+                companyName={item.companyName}
+                industry={item.industry}
+                location={item.location}
+                date={item.date}
+              />
             </div>
           );
         })}

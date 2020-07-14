@@ -11,18 +11,10 @@
   top: 1rem;
   left: 6rem;
 }
-.button {
-  height: 3.5rem;
-  color: black;
-  width: 10rem;
+/* .button {
   position: relative;
-  left: 120rem;
-  bottom: 3rem;
-  font-size: 1.3rem;
-  border-radius: 0.2rem;
-  outline: none;
-  font-weight: bold;
-}
+  left: 20rem;
+} */
 .btn {
   outline: none;
 }
