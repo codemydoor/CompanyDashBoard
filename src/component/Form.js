@@ -19,7 +19,7 @@ class Form extends Component {
   // functions
   handleChange(event) {
     this.setState({
-      [event.target.value]: event.target.name,
+      [event.target.name]: event.target.value,
     });
   }
 

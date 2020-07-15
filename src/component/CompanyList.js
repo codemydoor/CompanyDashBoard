@@ -1,22 +1,9 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import Form from "./Form";
 import CompanyInfo from "../component/CompanyInfo";
 
 class CompanyList extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      company: [
-        {
-          companyName: "unilever",
-          industry: "",
-          location: "",
-          date: "",
-        },
-      ],
-    };
-  }
   AddNewCompany = (newCompany) => {
     this.setState({
       ...this.state,
@@ -29,7 +16,7 @@ class CompanyList extends Component {
       <div>
         <Form addCompany={this.AddNewCompany} />
 
-        {this.state.company.map((item, index) => {
+        {this.props.companies.map((item, index) => {
           return (
             <div>
               <CompanyInfo
@@ -38,6 +25,8 @@ class CompanyList extends Component {
                 industry={item.industry}
                 location={item.location}
                 date={item.date}
+                approve={item.approve}
+                action={item.action}
               />
             </div>
           );
@@ -46,5 +35,8 @@ class CompanyList extends Component {
     );
   }
 }
+const mapStateToProps = (state) => ({
+  companies: state.company,
+});
 
-export default CompanyList;
+export default connect(mapStateToProps)(CompanyList);
